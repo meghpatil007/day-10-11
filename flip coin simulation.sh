@@ -30,4 +30,17 @@ echo
 	then echo "tails win by " $((tc-hc))
 	elif((hc==tc))
 	then echo "its tie"
+
+		while(( $((hc-tc))>1 && $((tc-hc))>1))
+		do
+        		x=$((RANDOM%2))
+
+        		if((x==0))
+        		then
+                	((hc++))
+        		else
+                	((tc++))
+        		fi
+		done
+
 	fi
