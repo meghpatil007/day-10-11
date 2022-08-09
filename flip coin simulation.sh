@@ -1,11 +1,14 @@
 echo "This problem displays the winner head or tails"
+echo
 
-x=((RANDOM%2))
+for((i=1; i<=10; i++))
+do
+	x=$((RANDOM%2))
 
-if((x==0))
-then
-        echo "Heads"
-else
-        echo "Tails"
-fi
-
+	if((x==0))
+	then
+        	echo "Heads"
+	else
+        	echo "Tails"
+	fi
+done
